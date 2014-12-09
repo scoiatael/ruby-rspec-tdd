@@ -1,4 +1,4 @@
-require 'greeter'
+require_relative './greeter'
 
 require 'sinatra'
 require 'json'
