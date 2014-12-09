@@ -10,5 +10,5 @@ guard :rspec, cmd: "bundle exec rspec" do
     "spec/#{m[1]}.rb"
   end
 
-  watch("lib/example.rb") { "spec/" }
+  watch("lib/app.rb") { "spec/" }
 end
