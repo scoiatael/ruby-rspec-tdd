@@ -9,4 +9,6 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(%r{^spec/(.+).rb$}) do |m|
     "spec/#{m[1]}.rb"
   end
+
+  watch("lib/example.rb") { "spec/" }
 end
